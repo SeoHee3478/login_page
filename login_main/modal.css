@@ -1,0 +1,223 @@
+/*reset CSS */
+body,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* reset CSS 끝*/
+/* 전체 구조 설정*/
+body {
+    background-color: gainsboro;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.container {
+    color: black;
+    width: 518px;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    margin: 100px auto;
+    background-color: white;
+}
+
+.content {
+    margin: 26px 24px 12px;
+}
+
+/*head 부분*/
+.close {
+    width: 16px;
+    height: 16px;
+}
+
+.header {
+    margin: 0px;
+    padding: 20px 24px 18px;
+}
+
+h1 {
+    color: black;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+h1::after {
+    content: url(img/close.png);
+    vertical-align: middle;
+    float: right;
+}
+
+.title {
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/*login 부분*/
+.login {
+    margin-top: 24px;
+}
+
+input {
+    color: black;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    width: 452px;
+    height: 46px;
+    margin-bottom: 10px;
+    padding-left: 16px;
+}
+
+.keep {
+    color: #767676;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 6px 0 20px;
+}
+
+.keep::before {
+    content: url(img/icon_check_empty.png);
+    vertical-align: -4px;
+    margin-right: 8px;
+}
+
+.login_footer {
+    text-align: center;
+    margin: 20px 0px 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #767676;
+}
+
+.or {
+    margin: 0px 12px;
+}
+
+.other {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    color: #767676;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.other::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0px;
+    background-color: #C4C4C4;
+    width: 44%;
+    height: 1px;
+}
+
+.other::after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: 0;
+    background-color: #C4C4C4;
+    width: 44%;
+    height: 1px;
+}
+
+/* 다른 방법으로 로그인 부분*/
+.login_type {
+    text-align: center;
+}
+
+/* Button CSS */
+a.btn {
+    display: block;
+    text-decoration: none;
+    color: #767676;
+    border: 1px solid lightgray;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 15px;
+    opacity: 0.95;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+a.btn:hover {
+    opacity: 1;
+}
+
+/*파란색 로그인 버튼*/
+a.btn0 {
+    color: #ffffff;
+    background-color: #2F80ED;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*구글 로그인 버튼*/
+a.btn1 {
+    border: 1px solid #767676;
+}
+
+/*페이스북 로그인 버튼*/
+a.btn2 {
+    border: 1px solid #2D9CDB;
+}
+
+/*네이버 로그인 버튼*/
+a.btn3 {
+    border: 1px solid#00BF18;
+}
+
+/*카카오톡 로그인 버튼*/
+a.btn4 {
+    border: 1px solid #F2C94C;
+}
+
+a.btn1:before {
+    content: url(img/icon_google.png);
+    position: absolute;
+    left: 12px;
+    top: 10px;
+}
+
+a.btn2:before {
+    content: url(img/icon_facebook.png);
+    position: absolute;
+    left: 12px;
+    top: 11px;
+}
+
+a.btn3:before {
+    content: url(img/icon_naver.png);
+    position: absolute;
+    left: 12px;
+    top: 11px;
+}
+
+a.btn4:before {
+    content: url(img/icon_kakao.png);
+    position: absolute;
+    left: 12px;
+    top: 11px;
+}
